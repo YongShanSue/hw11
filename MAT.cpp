@@ -782,6 +782,7 @@ double spline(double x,int N,VEC &X,VEC &Y,VEC &M){// spline interp at x
 void getLinearSolution(MAT A,VEC & y,VEC b){
 	luFact(A);			//lu decomposition
 	/////////////Produce u///////////
+	double N=A.dim();
 	MAT u(N);							//Declare u
 	u=0;								//Set u to 0
 	for(int i=0;i<N;i++)

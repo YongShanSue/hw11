@@ -127,7 +127,7 @@ VEC *newVEC(int n){ // create dynamic VEC
 void	VEC::print(){
 	for(int i=0;i<dim;i++)
 		printf("%g\t",val[i]);
-	printf("\n");
+	//printf("\n");
 }
 VEC VEC::absolute(){
 	VEC v2(*this);
